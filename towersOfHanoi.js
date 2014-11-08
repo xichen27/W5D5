@@ -58,7 +58,6 @@ HanoiGame.prototype.promptMove = function(callback, completionCB){
     var start = parsedArr[0];
     var end = parsedArr[1];
     callback.call(that, start, end, completionCB);
-    // callback.bind(that, start, end, completionCB);
     if(!that.isWon()){
       that.run(completionCB)
     }
